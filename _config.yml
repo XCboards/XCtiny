@@ -1,0 +1,9 @@
+title: XCtiny
+author: XCboards project
+description: A low-cost, breadboard-able evaluation board for XC2C32A CPLD
+
+minima:
+  social_links:
+    github: inselc
+
+theme: minima

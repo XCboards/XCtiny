@@ -1,0 +1,59 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
+@import "../main.css";
+
+body {
+  font:400 16px/1.5 "IBM Plex Sans", sans-serif;
+}
+
+a.document_button {
+  display: block;
+  border: 1px solid #2a7ae2;
+  padding: 1.0em 1.0em 1.0em 1.0em;
+  text-decoration: none;
+  color: #2a7ae2;
+  max-width: 200px;
+  text-align: center;
+  margin-left: auto;
+}
+
+a.document_button:hover {
+  text-decoration: underline;
+  color: #111;
+  border: 1px solid #111;
+}
+
+a.site-title {
+  float: none;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+p.site-subtitle {
+  margin-top: -1em;
+  color: #808080;
+  font-style: italic;
+  font-size: small;
+}
+
+div.home {
+  text-align: justify
+}
+
+.site-footer {
+  margin: 0;
+  padding:  0.75em;
+}
+
+div.footer-col > p {
+  margin-bottom: 0;
+}
+
+div.footer-col {
+  margin-bottom: 0;
+}
+p.center-img {
+  text-align: center
+}

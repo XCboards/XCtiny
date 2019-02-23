@@ -1,0 +1,69 @@
+# -----------------------------------------------------------------------------
+#
+#                         XCboards Project: XCtiny
+#          Breadboard-able XC2C32A evaluation and development board
+# 
+# -----------------------------------------------------------------------------
+#
+# Description:  User Constraints File
+# File:         top_XCtiny_template.ucf
+# Created:      17 Jan 2019 / inselcontroller
+# 
+# Visit https://XCboards.github.io/XCtiny for documentation
+#
+
+# -- [ Clock inputs ] ---------------------------------------------------------
+# "CLK0" - on-board 8MHz oscillator
+#NET "CLK0"      LOC="P6"  | IOSTANDARD=LVCMOS33 | BUFG=CLK  | TNM_NET = CLK0;
+#TIMESPEC TS_CLK0 = PERIOD "CLK0" 8.0000 MHz HIGH 50%;
+# "CLK1" - on-board 7.8125kHz oscillator
+#NET "CLK1"      LOC="P7"  | IOSTANDARD=LVCMOS33 | BUFG=CLK  | TNM_NET = CLK1;
+#TIMESPEC TS_CLK1 = PERIOD "CLK1" 7.8125 KHz HIGH 50%;
+
+# -- [ Global reset ] ---------------------------------------------------------
+# "nGSR" - on-board reset button. Active-low!
+#NET "nGSR"      LOC="P31" | IOSTANDARD=LVCMOS33 | BUFG=SR   | SCHMITT_TRIGGER;
+#NET "nGSR"      LOC="P31" | IOSTANDARD=LVCMOS18 | BUFG=SR   | SCHMITT_TRIGGER;
+
+# -- [ Input-only signals ] ---------------------------------------------------
+# "GPI" - general purpose input (pin 22)
+#NET "GPI"       LOC="P22" | IOSTANDARD=LVCMOS33;
+#NET "GPI"       LOC="P22" | IOSTANDARD=LVCMOS18;
+
+# -- [ GPIO ] -----------------------------------------------------------------
+# "GPIO<n>" - general purpose inputs/outputs
+#NET "GPIO<0>"   LOC="P1"  | IOSTANDARD=LVCMOS33;
+#NET "GPIO<1>"   LOC="P2"  | IOSTANDARD=LVCMOS33;
+#NET "GPIO<2>"   LOC="P3"  | IOSTANDARD=LVCMOS33;
+#NET "GPIO<3>"   LOC="P5"  | IOSTANDARD=LVCMOS33;
+#NET "GPIO<4>"   LOC="P8"  | IOSTANDARD=LVCMOS33;
+#NET "GPIO<5>"   LOC="P9"  | IOSTANDARD=LVCMOS33;
+#NET "GPIO<6>"   LOC="P10" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<7>"   LOC="P13" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<8>"   LOC="P17" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<9>"   LOC="P18" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<10>"  LOC="P19" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<11>"  LOC="P23" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<12>"  LOC="P24" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<13>"  LOC="P28" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<14>"  LOC="P29" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<15>"  LOC="P30" | IOSTANDARD=LVCMOS33;
+#NET "GPIO<16>"  LOC="P32" | IOSTANDARD=LVCMOS33;
+
+#NET "GPIO<0>"   LOC="P1"  | IOSTANDARD=LVCMOS18;
+#NET "GPIO<1>"   LOC="P2"  | IOSTANDARD=LVCMOS18;
+#NET "GPIO<2>"   LOC="P3"  | IOSTANDARD=LVCMOS18;
+#NET "GPIO<3>"   LOC="P5"  | IOSTANDARD=LVCMOS18;
+#NET "GPIO<4>"   LOC="P8"  | IOSTANDARD=LVCMOS18;
+#NET "GPIO<5>"   LOC="P9"  | IOSTANDARD=LVCMOS18;
+#NET "GPIO<6>"   LOC="P10" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<7>"   LOC="P13" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<8>"   LOC="P17" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<9>"   LOC="P18" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<10>"  LOC="P19" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<11>"  LOC="P23" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<12>"  LOC="P24" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<13>"  LOC="P28" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<14>"  LOC="P29" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<15>"  LOC="P30" | IOSTANDARD=LVCMOS18;
+#NET "GPIO<16>"  LOC="P32" | IOSTANDARD=LVCMOS18;
