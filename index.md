@@ -23,7 +23,8 @@ Everything needed to get started making new projects with the *XCtiny* developme
 * [User Constraints File Template](res/top_XCtiny_template.ucf)
 
 ## fritzing® part
-A custom part for the popular *fritzing* breadboard layout tool is in development!
+A custom part for the popular fritzing breadboard layout tool is available for download from this repository. Components for Altium CircuitMaker, Autodesk® EAGLE and KiCad will be available soon!
+* [fritzing Parts](res/XCtiny_fritzing_parts.zip)
 
 ## Example projects
 A small collection of demo projects for those new to VHDL, or just looking for a quick design to download:
