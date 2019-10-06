@@ -28,7 +28,7 @@ A custom part for the popular fritzing breadboard layout tool is available for d
 
 ## Example projects
 A small collection of demo projects for those new to VHDL, or just looking for a quick design to download:
-* Out-Of-Box demo
+* [Out-Of-Box demo ("Blink")](res/XCtiny_Blink.zip)
 * 8-bit binary counter
 * Binary to 7-segment LED display decoder
 * Bidirectional 3.3V-to/from-1.8V bus level shifter
